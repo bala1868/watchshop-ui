@@ -1,0 +1,1215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free-Time Watches</title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="icon" href="https://img.magnific.com/premium-vector/letter-f-creative-unique-new-shape-modern-monogram-logo_1109207-57.jpg?semt=ais_hybrid&w=740&q=80">
+   
+</head>
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Trebuchet MS", Arial, sans-serif;
+    /* font-family: 'Comic Sans MS', Tahoma, Geneva, Verdana, sans-serif; */
+    background: #ffeaec;
+}
+
+nav{
+    background-color: #301a4b;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+nav img{
+    width: 50px;
+    height: 50px;
+    border-radius: 40%;
+    margin-left: 18px;
+    transition: 0.2s;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+nav img:hover{
+    transform: scale(1.2);
+    box-shadow: 80px 0 30px #ffffff;
+}
+
+nav a{
+    display: flex;
+    gap: 15px;
+    text-align: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.brand p{
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: #ffffff;
+    margin: 0;
+}
+
+nav ul{
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-flex;
+    position: relative;
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    color: #ffffff;
+    font-weight: bold;
+    transition: 0.2s;
+    text-transform: uppercase;
+}
+
+nav ul li a:hover{
+    transform: scale(1.2);
+    color: #e04a6f;
+}
+
+nav ul li ul{
+    display: none;
+    top: 100%;
+    position: absolute;
+    background: #ffeaec;
+    width: 250px;
+    z-index: 100;
+}
+
+nav ul li:hover ul{
+    display: block;
+}
+
+nav ul li ul li a{
+    color: #301a4b;
+    padding: 20px;
+}
+
+nav ul li ul li{
+    display: block;
+    width: 100%;
+    padding: 9px;
+    border-bottom: 1px solid #6db1bf;
+}
+
+nav ul li ul li:last-child{
+    border-bottom: none;
+}
+
+.nav-wishlist,
+.nav-cart{
+    font-size: 28px;
+}
+
+/*----------------Hero Section css----------------------------------------------------------------------------------------------------- */
+
+.hero{
+    height: 500px;
+    margin: 20px;
+    position: relative;
+    background: #ffeaec;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.hero img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    text-align: center;
+    border-radius: inherit;
+    object-fit: cover;
+}
+
+.hero::after{
+    content: "";
+    inset: 0;
+    position: absolute;
+    background: rgba(1, 1, 2, 0.432);
+}
+
+.hero-content{
+    display: block;
+    position: absolute;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    margin-left: 80px;
+    /* margin-top: 145px; */
+    padding: 20px;
+    z-index: 3;
+}
+
+.hero-content h5{
+    color: #ffffff;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 10px;
+    text-transform: uppercase;
+    background-color: #3f6c51;
+    margin-bottom: 14px;
+    font-weight: bold;
+}
+
+.hero-content h4{
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 45px;
+    line-height: 1.2;
+    color: #ffffff;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.style{
+    color: #e04a6f;
+    font-weight: bold;
+    font-size: 78px;
+}
+
+.own{
+    color: #e04a6f;
+    font-size: 78px;
+}
+
+.hero-content p{
+    color: #ffeaec;
+    font-size: 19px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.hero-buttons{
+    display: inline-flex;
+    gap: 25px;
+    margin: 25px;
+    justify-content: center;
+}
+
+.hero-shop-btn{
+    color: #ffffff;
+    font-weight: bold;
+    font-family: cursive;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #e04a6f;
+    border-radius: 15px;
+    transition: transform 0.2s ease;
+}
+
+.hero-customize-btn{
+    font-family: cursive;
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #e04a6f;
+    border-radius: 15px;
+    transition: transform 0.2s ease;
+}
+
+.hero-shop-btn:hover{
+    transform: translateX(8px);
+}
+
+.hero-customize-btn:hover{
+    transform: translateX(8px);
+}
+
+.category-card-title{
+    margin-top: 35px;
+    margin-bottom: 25px;
+    text-align: center;
+    align-items: center;
+}
+
+.category-card-title h1{
+    font-size: 43px;
+    font-weight: bold;
+    margin-bottom: 16px;
+    color: #301a4b;
+    letter-spacing: 0.2cap;
+}
+
+.category-card-title p{
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 19px;
+    letter-spacing: 0.9cap;
+    line-height: 1.7;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: #ffeaec;
+    text-transform: capitalize;
+}
+
+.category-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+    margin-bottom: 30px;
+    /* position: relative; */
+}
+
+.category-card{
+    height: 350px;
+    width: 20%;
+    background-color: #ffeaec;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 10px 40px #301a4b;
+    transition: 0.2s;
+}
+
+.category-card:nth-child(4n+1){
+    background-color: #301a4b;
+}
+
+.category-card:nth-child(4n+2){
+    background-color: #ffeaec;
+}
+
+.category-card:nth-child(4n+3){
+    background-color: #e04a6f;
+}
+
+.category-card:nth-child(4n+4){
+    background-color: #3f6c51;
+}
+
+.category-card:hover{
+    transform: scale(1.1);
+    box-shadow: 0 10px 50px #e04a6f;
+}
+
+.category-card img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    position: absolute;
+}
+
+.category-card::after{
+    content: "";
+    inset: 0;
+    position: absolute;
+    background: rgba(48, 26, 75, 0);
+}
+
+.category-card h3{
+    position: absolute;
+    z-index: 3;
+    bottom: 15px;
+    text-align: center;
+    margin-left: 10px;
+    font-weight: bold;
+    background-color: #ffeaec;
+    padding: 9px;
+    border-radius: 20px;
+    color: #301a4b;
+}
+
+.product-card-title{
+    margin-top: 88px;
+    margin-bottom: 30px;
+    align-items: center;
+    text-align: center;
+}
+
+.product-card-title h1{
+    font-size: 58px;
+    margin-bottom: 10px;
+    color: #301a4b;
+    font-weight: bold;
+    letter-spacing: 0.2cap;
+    text-transform: uppercase;
+}
+
+.product-card-title p{
+    font-size: 18px;
+    font-weight: bold;
+    color: #3f6c51;
+}
+
+.product-container{
+    min-height: 400px;
+    width: calc(100% - 20px);
+    background-color: #ffeaec;
+    display: flex;
+    margin: 20px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-radius: 10px;
+}
+
+.product-card{
+    width: 300px;
+    position: relative;
+    background-color: #ffffff;
+    margin: 35px;
+    min-height: 400px;
+    max-height: 600px;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.4s ease;
+    box-shadow: 0 10px 40px #301a4b;
+}
+
+.product-card:hover{
+    transform: translateY(-18px);
+    box-shadow: 0 10px 18px rgba(243, 154, 157, 0.829);
+    cursor: pointer;
+}
+
+.product-img{
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+    transition: 0.2s;
+    overflow: hidden;
+}
+
+.product-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.product-img img:hover{
+    transform: scale(1.2);
+}
+
+.sale-badge{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #ffffff;
+    background-color: #e04a6f;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    justify-content: center;
+    padding: 12px;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.wish-list{
+    position: absolute;
+    right: 10px;
+    top: 8px;
+    color: #ffffff;
+    background-color: #301a4b;
+    font-size: 15px;
+    border-radius: 50%;
+    padding: 8px;
+    font-weight: bold;
+}
+
+.wish-list:hover{
+    background-color: #ffffff;
+    color: #e04a6f;
+}
+
+.product-content{
+    margin: 12px;
+}
+
+.brand{
+    margin-bottom: 7px;
+    text-transform: uppercase;
+    color: #3f6c51;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.product-content h1{
+    font-size: 34px;
+    margin-bottom: 8px;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+}
+
+.product-content p{
+    color: #3f6c51;
+    line-height: 1.5;
+    /* text-transform: capitalize; */
+}
+
+.rating{
+    margin-left: 12px;
+    letter-spacing: 0.3cap;
+    font-size: 18px;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.rating:hover{
+    color: #e04a6f;
+}
+
+.price{
+    margin: 12px;
+    font-weight: bold;
+}
+
+.current-price{
+    padding: 7px;
+    font-size: 18px;
+}
+
+.old-price{
+    margin-right: 5px;
+    text-decoration: line-through;
+}
+
+.discount{
+    font-size: 18px;
+    padding: 5px 10px;
+    background-color: #e04a6f;
+    border-radius: 17px;
+    color: #ffffff;
+}
+
+.product-card-btn{
+    display: flex;
+    justify-content: space-between;
+    margin: 12px;
+}
+
+.add-to-cart-btn{
+    padding: 10px 15px;
+    background-color: #e04a6f;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 7px;
+    text-decoration: none;
+    transition: 0.2s;
+    overflow: hidden;
+}
+
+.buy-now-btn{
+    padding: 10px 15px;
+    color: #ffffff;
+    background-color: #e04a6f;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 7px;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.add-to-cart-btn:hover,
+.buy-now-btn:hover{
+    transform: scale(1.2);
+    box-shadow: 0 10px 20px #301a4b;
+}
+
+/* Info section */
+
+.info-section{
+    margin-top: 30px;
+    text-align: center;
+    margin-bottom: 25px;
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+.info-section h1{
+    font-size: 48px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    color: #301a4b;
+    letter-spacing: 0.2cap;
+}
+
+.info-section p{
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: capitalize;
+    margin-bottom: 12px;
+    color: #3f6c51;
+    line-height: 1.6;
+}
+
+.info-container{
+    margin: 12px;
+    display: flex;
+    position: relative;
+    max-height: 500px;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: #ffeaec;
+    border-radius: 12px;
+}
+
+.info-card{
+    min-height: 250px;
+    /* box-sizing: border-box; */
+    max-height: 300px;
+    background-color: #ffffff;
+    width: 250px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 10px 20px;
+    box-shadow: 0 10px 20px #301a4b;
+    transition: 0.4s;
+    overflow: hidden;
+}
+
+.info-card:hover{
+    box-shadow: 0 10px 20px #e04a6f;
+    transform: translateY(-10px);
+}
+
+.info-icon{
+    /* font-size: px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #301a4b;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 39%;
+}
+
+.info-card:hover .info-icon{
+    transform: rotate(50deg) scale(1.4);
+    background-color: #e04a6f;
+}
+
+.info-card h2{
+    margin-top: 10px;
+    margin-bottom: 7px;
+    color: #301a4b;
+    font-weight: bold;
+    font-size: 27px;
+    text-transform: capitalize;
+}
+
+.info-description{
+    padding: 5px;
+    text-align: center;
+    color: #3f6c51;
+    margin-bottom: 25px;
+}
+
+.info-card-btn{
+    padding: 9px 20px;
+    background-color: #e04a6f;
+    color: #ffffff;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+    border-radius: 10px;
+    transition: 0.2s;
+}
+
+.info-card-btn:hover{
+    transform: translateX(-5px);
+    background-color: #e04a6f;
+    box-shadow: 0 5px 15px rgba(48, 26, 75, 0.3);
+}
+
+.price-section{
+    margin: 60px 20px;
+    text-align: center;
+}
+
+.price-section h1{
+  font-size: 45px;
+  letter-spacing: 0.5cap;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.price-section > p{
+    font-size: 18px;
+    font-weight: bold;
+    color: #3f6c51;
+    margin-bottom: 25px;
+}
+
+.price-table{
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(48, 26, 75, 0.2);
+}
+
+.price-table th{
+    background-color: #301a4b;
+    color: #ffffff;
+    padding: 15px;
+    font-size: 17px;
+    text-transform: uppercase;
+}
+
+.price-table td{
+    padding: 14px;
+    border: 1px solid #6db1bf;
+    font-size: 16px;
+}
+
+.price-table tr:hover{
+    background-color:#e04a6f;
+    /* font-weight: bold; */
+    color: white;
+}
+
+
+
+/* form */
+
+.contact-section{
+    margin: 60px 20px;
+    text-align: center;
+}
+
+.contact-section h1{
+     font-size: 45px;
+  letter-spacing: 0.3cap;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color: #301a4b;
+}
+
+.contact-section > p{
+    font-size: 18px;
+    font-weight: bold;
+    color: #3f6c51;
+    margin-bottom: 30px;
+}
+
+.contact-container{
+    max-width: 700px;
+    margin: auto;
+    padding: 30px;
+    background-color: #6db1bf;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(48, 26, 75, 0.2);
+}
+
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    text-align: left;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.form-group label{
+    font-size: 16px;
+    font-weight: bold;
+    color: #301a4b;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #6db1bf;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: inherit;
+    outline: none;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus{
+    border-color: #e04a6f;
+    box-shadow: 0 0 5px rgba(243, 154, 157, 0.3);
+}
+
+.form-group textarea{
+    resize: vertical;
+}
+
+.contact-btn{
+    padding: 13px 25px;
+    border: none;
+    border-radius: 10px;
+    background-color: #e04a6f;
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-btn:hover{
+    background-color: #e04a6f;
+    transform: translateY(-3px);
+    box-shadow: 0 7px 15px rgba(48, 26, 75, 0.3);
+}
+
+/* foooter */
+
+footer{
+    background-color: #301a4b;
+    margin-top: 38px;
+    color: #ffffff;
+}
+
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 35px 25px;
+    gap: 25px;
+}
+
+.footer-content,
+.social-links,
+.contact{
+    width: 18%;
+    text-align: center;
+}
+
+.footer-container h2{
+    font-size: 20px;
+    color: #e04a6f;
+    margin-bottom: 15px;
+}
+
+.footer-container p{
+    text-align: justify;
+    line-height: 1.7;
+    color: #6db1bf;
+}
+
+.footer-container ul{
+    display: block;
+    padding: 0;
+}
+
+.footer-container ul li{
+    text-align: center;
+    list-style: none;
+    margin-bottom: 9px;
+}
+
+.footer-container a{
+    color: #6db1bf;
+    text-decoration: none;
+    display: inline-flex;
+    transition: 0.3s;
+}
+
+.footer-container a:hover{
+    color: #e04a6f;
+    transform: translateX(7px);
+}
+
+.contact p{
+    text-align: center;
+    color: #6db1bf;
+    line-height: 1.9;
+}
+
+.bottom{
+    margin-top: 10px;
+    margin-right: 5%;
+    margin-left: 5%;
+    border-top: 1px solid #6db1bf;
+    padding-bottom: 15px;
+}
+
+.bottom p{
+    margin-top: 15px;
+    text-align: center;
+    color: #3f6c51;
+}
+
+
+</style>
+<body>
+<nav>
+        <a href="#" class="brand"><img src="https://images.unsplash.com/photo-1523170335258-f5ed11844a49?auto=format&fit=crop&w=1200&q=80" alt="Brand-logo"><p>Free-Time</p></a>
+        
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">New Arrivals</a></li>
+            <li><a href="#">Shop All</a></li>
+            <li><a href="#">Interest Based</a>
+                <ul >
+                    <li><a href="#classic">Classic</a></li>
+                    <li><a href="#sport">Sport</a></li>  
+                    <li><a href="#luxury">Luxury</a></li>
+                    <li><a href="#chronograph">Chronograph</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Customize</a></li>
+            <li><a href="#">Our Stores</a></li>
+            <li><a href="#" class="nav-wishlist"><i class="fa fa-heart-o"></i></a></li>
+            <li><a href="#" class="nav-cart">🛒</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero">
+              <img src="https://images.unsplash.com/photo-1524805444758-089113d48a6d?auto=format&fit=crop&w=800&q=80" alt="hero-image">
+             <div class="hero-content">
+                 <h5>Designed for every moment</h5>
+                    <h4>Wear Your <span class="style">Time</span><br>Make It Your <span class="own">Own</span></h4>
+                        <p>Time that feels different. Time that feels you.</p>
+                     <div class="hero-buttons">
+                     <a href="#" class="hero-shop-btn">Shop Now</a>
+                     <a href="#" class="hero-customize-btn">Customize</a>
+                     </div>
+            </div>
+    </section>
+
+    <div class="category-card-title">
+        <h1>  SHOP BY STYLE </h1>
+        <p>Find watches designed around your lifestyle</p>
+    </div>
+    <div class="category-container">
+        <a href="#classic" class="category-card">
+            <img src="https://images.unsplash.com/photo-1533139502658-0198f920d8e8?auto=format&fit=crop&w=800&q=80" alt="travel-img">
+            <h3>Classic</h3>
+          
+        </a>
+        <a href="#sport" class="category-card">
+            <img src="https://images.unsplash.com/photo-1508057198894-247b23fe5ade?auto=format&fit=crop&w=800&q=80" alt="Sport-img">
+            <h3>Sport</h3>
+        </a>
+        <a href="#luxury" class="category-card">
+            <img src="https://images.unsplash.com/photo-1547996160-81dfa63595aa?auto=format&fit=crop&w=800&q=80" alt="Luxury-img">
+            <h3>Luxury</h3>  
+        </a>
+        
+        <a href="#chronograph" class="category-card">
+            <img src="https://images.unsplash.com/photo-1522312346375-d1a52e2b99b3?auto=format&fit=crop&w=800&q=80" alt="music-img">
+            <h3>Chronograph</h3>
+        </a>
+    </div>
+ 
+    <div class="product-card-title">
+        <h1 id="classic">Classic</h1>
+        <p>Style that moves with time</p>
+    </div> 
+    <div class="product-container">
+        <div class="product-card">
+            <div class="product-img"> 
+                <img src="https://images.unsplash.com/photo-1523170335258-f5ed11844a49?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8d2F0Y2hlc3xlbnwwfHwwfHx8MA%3D%3D" alt="product-img">
+                <div class="sale-badge">sale</div>
+                <div class="wish-list"><i class="fa fa-heart-o"></i></div>  
+            </div>
+            
+            <div class="product-content">
+                <div class="brand"><h4>Classic</h4></div>
+                <h1>Classic Steel Watch </h1>
+                <p>A timeless steel watch with a clean dial and versatile design for everyday wear.</p>
+            </div>
+            
+            <div class="rating">
+                <p><span>☆☆☆☆☆</span>4.5</p>
+            </div>
+            
+            <div class="price">
+                <span class="current-price">$299</span>
+                <span class="old-price">$399</span>
+                <span class="discount">10%</span>
+            </div>
+            <div class="product-card-btn">
+                <a href="#" class="add-to-cart-btn">Add To Cart</a>
+                <a href="#" class="buy-now-btn">Buy Now</a>
+            </div>
+        </div>   
+        
+        
+        <div class="product-card">
+            <div class="product-img"> 
+                <img src="https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?auto=format&fit=crop&w=800&q=80" alt="product-img">
+                    <div class="sale-badge">10%</div>
+                    <div class="wish-list"><i class="fa fa-heart-o"></i></div>  
+            </div>
+            
+            <div class="product-content">
+                <div class="brand"><h4>Classic</h4></div>
+                <h1>Explorer Black Watch</h1>
+                <p>A rugged watch designed for outdoor adventures, combining durable build with a bold explorer style.</p>
+            </div>
+           
+            <div class="rating">
+                   <p><span>☆☆☆☆☆</span>4.5</p>
+           </div>
+           
+           <div class="price">
+                <span class="current-price">$299</span>
+                <span class="old-price">$399</span>
+                <span class="discount">10%</span>
+           </div>
+            <div class="product-card-btn">
+                <a href="#" class="add-to-cart-btn">Add To Cart</a>
+                <a href="#" class="buy-now-btn">Buy Now</a>
+            </div>
+        </div> <div class="product-card">
+            <div class="product-img"> 
+                    <img src="https://images.unsplash.com/photo-1557531365-e8b22d93dbd0?auto=format&fit=crop&w=800&q=80" alt="product-img">
+                    <div class="sale-badge">sale</div>
+                    <div class="wish-list"><i class="fa fa-heart-o"></i></div>  
+            </div>
+            
+            <div class="product-content">
+                <div class="brand"><h4>Classic</h4></div>
+                <h1>Racing Chronograph</h1>
+                <p>A racing-inspired chronograph with bold details and a precise sporty design.</p>
+            </div>
+           
+            <div class="rating">
+                   <p><span>☆☆☆☆☆</span>4.5</p>
+           </div>
+           
+           <div class="price">
+                <span class="current-price">$299</span>
+                <span class="old-price">$399</span>
+                <span class="discount">10%</span>
+           </div>
+            <div class="product-card-btn">
+                <a href="#" class="add-to-cart-btn">Add To Cart</a>
+                <a href="#" class="buy-now-btn">Buy Now</a>
+            </div>
+        </div>      
+  </div>
+
+
+          
+<div class="info-section">
+    <h1>Why choose Us</h1>
+    <p>Choose us for quality products, modern designs, affordable prices, and a smooth shopping experience. We focus on delivering reliable products with fast service and customer satisfaction.</p>
+</div>
+<div class="info-container">
+   <div class="info-card">
+       <div class="info-icon">
+          🚛
+       </div>
+       <h2>Fast Delivery</h2>
+       <p class="info-description">Get your favorite products delivered quickly and safely right to your doorstep with reliable service every time.</p>
+           <a href="#" class="info-card-btn">Learn more</a>
+   </div>
+     <div class="info-card">
+      <div class="info-icon">⭐</div>
+       <h2>Premium Quality</h2>
+       <p class="info-description">Enjoy carefully selected products crafted with quality materials, stylish designs, and lasting comfort for wear.</p>
+       <a href="#" class="info-card-btn">Learn more</a>
+   </div>
+    <div class="info-card">
+      <div class="info-icon">🔒</div>
+  <h2>Secure Payment</h2>
+       <p class="info-description">Shop confidently with secure payment options that protect your personal information and every transaction online.</p>
+       <a href="#" class="info-card-btn">Learn more</a>
+   </div>
+    <div class="info-card">
+     <div class="info-icon">🔄</div>
+<h2>Easy Returns</h2>
+       <p class="info-description">Return eligible products easily through our simple, convenient, and hassle-free return process whenever you need.</p>
+       <a href="#" class="info-card-btn">Learn more</a>
+   </div>
+</div>
+
+<div class="price-section">
+    <h1>PRICE LIST</h1>
+    <p>Explore our products and their prices</p>
+
+    <table class="price-table">
+        <thead>
+            <tr>
+                <th>Product</th>
+                <th>Category</th>
+                <th>Original Price</th>
+                <th>Discount</th>
+                <th>Final Price</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Classic Steel Watch</td>
+                <td>Classic</td>
+                <td>$399</td>
+                <td>10%</td>
+                <td>$299</td>
+            </tr>
+
+            <tr>
+                <td>Explorer Black Watch</td>
+                <td>Classic</td>
+                <td>$399</td>
+                <td>10%</td>
+                <td>$299</td>
+            </tr>
+
+            <tr>
+                <td>Racing Chronograph</td>
+                <td>Classic</td>
+                <td>$399</td>
+                <td>10%</td>
+                <td>$299</td>
+            </tr>
+
+            <tr>
+                <td>Sport-Free T-shirt</td>
+                <td>Sport</td>
+                <td>$399</td>
+                <td>10%</td>
+                <td>$299</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="contact-section">
+    <h1>Contact Us</h1>
+    <p>Have a question? Send us a message and we will get back to you.</p>
+
+    <div class="contact-container">
+
+        <form class="contact-form">
+
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" placeholder="Enter your name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" placeholder="Enter your phone number">
+            </div>
+
+            <div class="form-group">
+                <label for="subject">Subject</label>
+                <select id="subject">
+                    <option value="">Select a subject</option>
+                    <option>Order Enquiry</option>
+                    <option>Product Information</option>
+                    <option>Delivery</option>
+                    <option>Return & Refund</option>
+                    <option>Other</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" rows="5"
+                    placeholder="Write your message here..." required></textarea>
+            </div>
+
+            <button type="submit" class="contact-btn">
+                Send Message
+            </button>
+
+        </form>
+
+    </div>
+</div>
+
+
+<footer>
+    <div class="footer-container">
+
+        <div class="footer-content">
+            <h2>Free-Time</h2>
+            <p>
+                Discover stylish watches designed around your interests,
+                lifestyle, and everyday comfort. Wear your time, make it your own.
+            </p>
+        </div>
+
+        <div class="footer-content">
+            <h2>Quick Links</h2>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">New Arrivals</a></li>
+                <li><a href="#">Shop All</a></li>
+                <li><a href="#">Customize</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-content">
+            <h2>Categories</h2>
+            <ul>
+                <li><a href="#classic">Classic</a></li>
+                <li><a href="#sport">Sport</a></li>
+                <li><a href="#luxury">Luxury</a></li>
+                <li><a href="#chronograph">Chronograph</a></li>
+            </ul>
+        </div>
+
+        <div class="contact">
+            <h2>Contact Us</h2>
+            <p><b>Phone:</b> +91 98765 43210</p>
+            <p><b>Email:</b> support@freetime.com</p>
+            <p><b>Location:</b> Coimbatore, Tamil Nadu</p>
+        </div>
+
+        <div class="social-links">
+            <h2>Follow Us</h2>
+            <ul>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">YouTube</a></li>
+                <li><a href="#">LinkedIn</a></li>
+                <li><a href="#">X</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="bottom">
+        <p>© 2026 Free-Time. All Rights Reserved.</p>
+    </div>
+</footer>
+</body>
+</html>
